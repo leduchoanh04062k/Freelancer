@@ -13,6 +13,10 @@
   font-family: Roboto-Bold;
   src: url("../fonts/Roboto-Bold.ttf");
 }
+@font-face {
+  font-family: Roboto-Regular;
+  src: url("../fonts/Roboto-Regular.ttf");
+}
 .wapper {
   width: auto;
   height: auto;
@@ -40,10 +44,22 @@
 }
 .anh1 {
   width: auto;
-  margin-top: 50px;
   text-align: center;
 }
 .text1 {
+  font-family: Roboto-Medium;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 167.69%;
+  padding: 10px;
+  /* or 30px */
+
+  text-align: center;
+
+  color: #ffffff;
+}
+.textone {
   font-family: Roboto-Medium;
   font-style: normal;
   font-weight: 500;
@@ -75,9 +91,9 @@
   line-height: 19px;
   color: #0c214a;
 }
-form {
-  padding: 50px 150px 50px;
+.form {
   width: 100%;
+  /* padding: 20px 50px; */
 }
 .btn-primar {
   width: 215px;
@@ -147,10 +163,6 @@ form {
   left: 0;
 }
 
-.form-login form {
-  justify-content: center;
-  align-items: center;
-}
 .submit-control {
   text-align: center;
   border: none;
@@ -200,6 +212,18 @@ form {
 
   color: #7c7c7c;
 }
+.resigner span {
+  font-family: Roboto-Regulars;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  text-align: center;
+
+  color: #7c7c7c;
+}
 .resigner a {
   text-decoration: none;
   font-family: Roboto-Bold;
@@ -227,40 +251,40 @@ form {
   .anh1 img {
     width: 200px;
   }
-  .text {
-    width: auto;
+  .textone {
+    width: 463px;
+    /* height: 60px; */
     font-family: Roboto-Medium;
     font-style: normal;
-    font-weight: 500;
     font-size: 18px;
-    line-height: 167.69%;
+    line-height: 30px;
     text-align: center;
     color: #ffffff;
+    /* padding: 20px 150px 20px; */
+    margin-left: 15%;
   }
   .btn:not(:disabled):not(.disabled) {
     cursor: pointer;
     margin: 5px;
     margin-left: 0;
   }
-  /* .box {
+  .box {
     width: 100%;
-    height: 762px;
+    height: 500px;
   }
-  .box1 {
+  /* .box1 {
     width: 100%;
     height: 762px;
     justify-content: center;
     align-items: center;
-  } */
+  }  */
   .form-login {
     width: 100%;
   }
-  form {
+  .form {
     width: 100%;
-    padding: 15px;
   }
   .form-controler {
-    width: auto;
     background-color: #f9fbfd;
   }
   .form-controler input {
@@ -285,6 +309,13 @@ form {
 
     color: #ffffff;
   }
+  .loginer h2 {
+    margin-top: 46px;
+  }
+  .form-login {
+    width: 100%;
+    /* padding: 40px 70px; */
+  }
 }
 @media screen and (max-width: 667px) {
   .logo {
@@ -294,10 +325,7 @@ form {
     width: 200px;
   }
 
-  .text {
-    width: auto;
-    text-align: center;
-    color: #2482dc;
+  .textone {
     display: none;
   }
   .text1 {
@@ -335,10 +363,6 @@ form {
 
     color: #ffffff;
   }
-  form {
-    width: 100%;
-    padding: 5px;
-  }
 
   .form-controler:first-child {
     margin-bottom: 20px;
@@ -354,9 +378,31 @@ form {
     border-radius: 8px;
     border-radius: 8px;
   }
-  .resigner {
-    color: #ffff;
+  .resigner span {
+    font-family: Roboto-Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: white;
   }
+  .resigner span a {
+    font-family: Roboto-Bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #ffffff;
+  }
+  /* .resigner {
+    color: #ffff;
+  } */
   .resigner a {
     color: #ffff;
   }
@@ -368,5 +414,347 @@ form {
   }
   .align-self-center button {
     margin-top: 100%;
+  }
+  .button {
+    margin-top: 400px;
+  }
+  .button2 {
+    margin-top: 100px;
+  }
+  .box {
+    width: 375px;
+    height: 788px;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(171.25deg, #47a4ff 12.82%, #148afc 63.9%);
+  }
+}
+/* /*registration/* */
+.tin {
+  /* width: calc(100% - 418px); */
+  height: 762px;
+  background: linear-gradient(171.1deg, #46a4fe 13.02%, #2684de 99.62%);
+}
+.tin4 {
+  /* width: 418px; */
+  background: linear-gradient(171.1deg, #46a4fe 13.02%, #2684de 99.62%);
+  height: 1085px;
+}
+
+.tin1 {
+  width: 100%;
+  background-color: white;
+}
+.tin2 {
+  background-color: white;
+  width: 100%;
+  height: auto;
+}
+.tin3 {
+  width: 100%;
+  height: auto;
+  background-color: white;
+}
+
+/* .logo {
+  width: auto;
+  background-image: url("../image/Frame.png");
+  background-repeat: no-repeat;
+  height: 60px;
+  background-position: center;
+} */
+.anhone {
+  width: auto;
+  text-align: center;
+}
+#upload_file {
+  display: none;
+}
+#div_1 {
+  width: 98px;
+  height: 98px;
+  background: #ffffff;
+  border: 1px solid #c8c8c8;
+  box-sizing: border-box;
+  border-radius: 5px;
+  display: inline-block;
+  position: relative;
+  margin-top: 19px;
+  cursor: pointer;
+}
+#div_2 {
+  width: 30.15px;
+  height: 30.15px;
+  background: #cbcbcb;
+  display: inline-block;
+  position: absolute;
+  top: 30px;
+  left: 35px;
+  border-radius: 50%;
+  line-height: 28px;
+  opacity: 0.7;
+}
+#div_2 .fa {
+  font-size: 13px;
+  color: #fff;
+}
+.text3 {
+  font-family: Roboto-Bold;
+  font-style: normal;
+
+  font-size: 16px;
+  line-height: 28px;
+  /* or 28px */
+
+  text-align: center;
+
+  color: #515151;
+}
+.button1 {
+  text-align: center;
+  padding: 10px;
+}
+.btn-primar {
+  border-radius: 100px;
+}
+.icon1 {
+  height: 50px;
+}
+.text-dark {
+  font-family: Roboto-Bold;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+
+  color: #0c214a;
+}
+.tieude {
+  text-align: center;
+  margin-top: 40px;
+}
+.tieude h2 {
+  font-variant: small-caps;
+  font-family: Roboto-Bold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 176.19%;
+  /* or 35px */
+  text-transform: uppercase;
+
+  color: #2786e0;
+}
+.avata {
+  text-align: center;
+  width: auto;
+  height: 100px;
+}
+.avata input {
+  text-align: center;
+}
+/* .tin2 label {
+  text-align: center;
+} */
+.text1 {
+  text-align: center;
+  font-family: Roboto-Bold;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  /* or 28px */
+  color: #515151;
+}
+/* .texta {
+  font-family: Roboto-Medium;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 20px;
+  /* or 30px */
+
+/* text-align: center;
+
+  color: #ffffff;
+} */
+.form1 {
+  margin-top: 50px;
+  width: 100%;
+}
+.form-group {
+  width: 100%;
+}
+.form-group label {
+  font-family: Roboto-Bold;
+  font-style: normal;
+
+  font-size: 16px;
+  line-height: 28px;
+  /* or 28px */
+
+  text-align: justify;
+
+  color: #515151;
+}
+.form-group span {
+  color: red;
+  margin: 5px;
+}
+.button01 {
+  padding: 10px;
+  text-align: center;
+}
+.btn-lg {
+  width: 20%;
+  height: 46px;
+  font-family: Roboto-Bold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+  /* identical to box height, or 32px */
+  text-transform: uppercase;
+
+  color: #ffffff;
+  background: #f8971c;
+  border-radius: 5px;
+}
+.btn-lg input {
+  font-family: Roboto-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 26px;
+  /* or 26px */
+
+  text-align: justify;
+
+  color: #adadad;
+}
+table {
+  border: 1px solid white;
+}
+th {
+  text-align: center;
+}
+td {
+  background: #fafafa;
+  border-radius: 2px;
+  border: 2px solid white;
+  text-align: center;
+}
+.table-responsive {
+  width: 100%;
+  height: auto;
+}
+.table a {
+  text-decoration: none;
+  font-family: Roboto-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  /* identical to box height, or 175% */
+
+  text-align: center;
+
+  color: #646464;
+}
+
+@media screen and (max-width: 1024px) {
+  .tin4 {
+    height: 50%;
+  }
+  .buttonone {
+    width: 100%;
+    padding: 20px 110px 20px;
+  }
+  /* .texta{
+    width: 100%;
+    padding: 20px 110px 20px;
+  } */
+  .button {
+    width: 100%;
+    padding: 20px 110px 20px;
+  }
+  .button1 {
+    float: left;
+  }
+  .logo {
+    display: none;
+  }
+  .text {
+    margin-top: 20px;
+    padding: 20px 120px 20px;
+    text-align: center;
+  }
+  .anhone {
+    width: auto;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 667px) {
+  .tin {
+    height: 50%;
+  }
+  /* .texta {
+    width: 500px;
+    text-align: center;
+  } */
+  .buttonone {
+    width: 100%;
+    padding: 20px 60px 20px;
+  }
+  .tieude {
+    padding: 5px 50px 5px;
+  }
+  .button01 {
+    text-align: center;
+    border-radius: 5px;
+  }
+  .button {
+    width: 100%;
+    padding: 20px 60px 20px;
+  }
+  .btn-lg {
+    width: 50%;
+    height: 46px;
+  }
+  /* .texta {
+    width: 100%;
+    text-align: center;
+  } */
+  .resigner a {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #2187e9;
+  }
+  .text {
+    /* position: inherit; */
+    display: inline-block;
+    /* width: 500px; */
+    color: wheat;
+    padding: 20px 0px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 27px;
+    /* or 27px */
+
+    text-align: center;
+
+    color: #ffffff;
   }
 }
