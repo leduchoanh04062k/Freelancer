@@ -2537,6 +2537,27 @@ hr {
   color: #ffffff;
 }
 /* thư viên modal */
+.div_modal {
+  width: 300px;
+  height: 500px;
+}
+.modal_search {
+  text-align: center;
+  width: 350px;
+  height: 334px;
+
+  background: #ffffff;
+  border-radius: 0px 0px 0px 10px;
+}
+.modal-header-search {
+  width: 100%;
+}
+.form_search {
+  width: 100%;
+}
+.modal-footer-search {
+  text-align: center;
+}
 .modal-body a {
   font-family: OpenSans-SemiBold;
   font-style: normal;
@@ -2847,7 +2868,8 @@ hr {
   .div_congviec1 {
     display: none;
   }
-  .menu_mobile3 {
+  .menu_mobile3,
+  .menu_moblie {
     display: flex;
   }
   .regular {
@@ -3188,7 +3210,7 @@ hr {
   /* background: red; */
   box-shadow: 0px 4px 20px rgba(87, 87, 87, 0.03);
 }
-.form_search {
+.form_search1 {
   width: auto;
   height: 40px;
   background: #ffffff;
@@ -3356,7 +3378,7 @@ hr {
 .lichvieclam {
   width: 100%;
   height: auto;
-  background-color: #f6f7f8;
+  background-color: #fcfbfb;
   padding: 60px;
 }
 .div_lichvieclam {
@@ -3584,8 +3606,18 @@ hr {
 .row_tow {
   display: none;
 }
-.container_lichviec {
+/* .container_lichviec {
   max-width: 100%;
+} */
+.div_buttonluuviec {
+  width: 147px;
+  height: 43px;
+  background: #fca927;
+  border-radius: 5px;
+}
+.div_buttonluuviec a {
+  color: white;
+  text-decoration: none;
 }
 @media screen and (max-width: 1024px) {
   /* .div_lichvieclam1,.tukhoa {
@@ -3648,9 +3680,12 @@ hr {
   .row_tow {
     display: none;
   }
-  .div_luuviec {
-    /* position: absolute; */
+  /* .div_luuviec {
+   
     display: none;
+  } */
+  .CTV_online {
+    height: 300px;
   }
   .mota p {
     width: 250px;
@@ -3661,6 +3696,136 @@ hr {
     line-height: 28px;
     color: #646464;
   }
+  .div_online1 {
+    margin-top: 5px;
+  }
+  .text_online {
+    width: calc(100%-20px);
+    font-family: Roboto-Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 171% */
 
+    color: #3a4957;
+    /* padding: 10px; */
+  }
+  .text_online h1 {
+    font-family: Roboto-Medium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 17px;
+    /* identical to box height, or 133% */
+
+    color: #2775c1;
+  }
+  .text_online p {
+    font-family: Roboto-Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height, or 171% */
+
+    color: #3a4957;
+  }
+  .text_online span {
+    font-family: Roboto-Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 171% */
+
+    color: #3a4957;
+  }
+  .luuvieclam1 {
+    margin-left: 170px;
+  }
+  /* .luuvieclam1 {
+    margin-left: 10px;
+  } */
+  /* .luuvieclam1 i {
+    float: left;
+  } */
+  .div_luuviec {
+    width: 100%;
+  }
 }
-/* chi tiết ứng viên */
+/* Danh sách ứng viên */
+.div_anhungvien {
+  width: 82px;
+  height: 82px;
+  margin-top: 5px;
+  float: left;
+  margin-left: 10px;
+}
+.div_tennhanvien {
+  margin-left: 5px;
+  margin-top: 10px;
+  font-family: Roboto-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  float: left;
+  color: #5d5d5d;
+}
+.div_mapungvien {
+  font-family: Roboto-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  margin-top: 10px;
+  float: left;
+  color: #5d5d5d;
+}
+.div_mapungvien i {
+  margin-left: 20px;
+  color: #148afc;
+}
+.div_thoigianungvien {
+  font-family: Roboto-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  margin-top: 10px;
+  color: #5d5d5d;
+}
+.div_thoigianungvien i {
+  margin-left: 20px;
+  color: #148afc;
+}
+.div_boder1 {
+  float: right;
+  /* border: 1px solid red; */
+  width: 137px;
+  height: 34px;
+
+  /* border: 1px solid #f8971c; */
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding-right: 20px;
+}
+.div_bennerungvien {
+  margin-top: 50px;
+  /* text-align: center; */
+}
+.div_bennerungvien img {
+  width: 314px;
+  height: 355px;
+}
+.div_xemthemungvien {
+  text-align: center;
+}
+.div_xemthemungvien a {
+  text-decoration: none;
+  color: #f8971c;
+}
